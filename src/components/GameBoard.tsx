@@ -3,7 +3,6 @@ type GameBoardProps = {
   turns: any[];
   gameBoard: Array<Array<string>>;
 };
-
 export default function GameBoard(props: GameBoardProps) {
   function handelCellClick(rowIndex: number, cellIndex: number) {
     props.changeTurn(rowIndex, cellIndex);
